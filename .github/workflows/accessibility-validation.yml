@@ -28,7 +28,8 @@ jobs:
               uses: microsoft/accessibility-insights-action@v2
               with:
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
-                  url: http://localhost:5106/
+                  url: http://localhost:5106/Basket
+                  max-urls: 1
                   
             - name: Upload report artifact
               uses: actions/upload-artifact@v2
